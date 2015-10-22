@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ParallelR</title>
+<link rel="stylesheet" href='resources/css/font-awesome.min.css'>
+<link rel="stylesheet" type="text/css" href='resources/css/style.css'>
+<link href='http://fonts.useso.com/css?family=Open+Sans:400,700,800,600,300,200' rel='stylesheet' type='text/css'>
+<link href= 'resources/css/responsive.css' rel="stylesheet" media="screen" type="text/css">
+<link rel="stylesheet" href='resources/sidr/stylesheets/jquery.sidr.dark.css' >
+<script src='resources/js/jquery.min.js'></script>
+<script src='resources/sidr/jquery.sidr.min.js'></script>
+</head>
+
+<body>
+<div class="header">
+  <div class="container">
+    <div class="logo-menu">
+      <div class="logo">
+        <h1><a href="#">ParallelR</a></h1>
+      </div>
+      <!--<a id="simple-menu" href="#sidr">Toggle menu</a>-->
+      <div id="mobile-header"> <a class="responsive-menu-button" href="#"><img src='resources/images/11.png' /></a></div>
+      <div class="menu" id="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="banner">
+  <div class="container">
+    <div class="header-text">
+      <h2>Accelerate R by Parallel Technologies</h2>
+      <p class="small-text">Provide service based NVIDIA</p>
+      <div class="button-section"> <a href="#" class="top-button">More Info</a> </div>
+    </div>
+  </div>
+</div>
+<div class="about" id="about">
+  <div class="container">
+    <h3 class="text-head">About us</h3>
+    <p class="box-desc">We offers training sessions for software developers who are looking to increase their skills in writing or optimizing applications for highly parallel processing in R. And, in the course, we will cover different programming models including OpenMP, MPI and CUDA with the real industry cases.</p>
+  </div>
+</div>
+<div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="缃戠珯妯℃澘">缃戠珯妯℃澘</a></div>
+<div class="services" id="services">
+  <div class="container">
+    <h3 class="text-head">Our services</h3>
+    <div class="features-section">
+      <ul>
+        <li>
+          <div class="feature-icon icon1"></div>
+          <h4>Training</h4>
+          <p>The training focuses on using multi-core system (SMP), accelerators (GPUs, Xeon Phi) and Clusters to speed up your computation or memory intensive applications.</p><br>
+		  <ul>
+		  <h5><a href="http://devblogs.nvidia.com/parallelforall/accelerate-r-applications-cuda/">- Blog</a></h5>
+		  <h5><a href="http://on-demand.gputechconf.com/gtc/2015/presentation/S5145-Patric-Zhao.pdf">- Talk</a></h5>
+		  <h5>- Course</h5>
+		  </ul>
+        </li>
+        <li>
+          <div class="feature-icon icon2"></div>
+          <h4>Consultant</h4>
+          <p>If you are short on time or you don’t have the internal resources, we can help on:</p><br>
+		  <ul>
+		  <h5>- Performance Analysis, bottleneck narrow down</h5>
+		  <h5>- Software development, porting, optimization</h5>
+		  <h5>- Legacy code acceleration</h5>
+		  <h5>- Code porting from standard R to parallel platform</h5>
+		  </ul>
+        </li>
+        <li>
+          <div class="feature-icon icon3"></div>
+          <h4>Products</h4>
+          <p>Deliver enhanced and paralleled R packages with high performance and minimum memory footprint.</p><br>
+		  <ul>
+		  <h5>- cuFFT</h5>
+		  <h5>- cuBLAS</h5>
+		  <h5>- ParaDNN</h5>
+		  </ul>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="contact" id="contact">
+  <div class="container">
+    <h3 class="text-head">Contact us</h3>
+    <p class="box-desc">Please email to patric.zhao@gmail.com for more information.</p>
+    
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+    <ul class="socialmedia">
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+    </ul>
+    <div class="infooter">
+      <p class="copyright">Copyright &copy; 2015 ParallelR. </p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">		
+			 $(document).ready(function() {
+				$('#simple-menu').sidr({
+				side: 'right'
+			});
+			});
+			$('.responsive-menu-button').sidr({
+				name: 'sidr-main',
+				source: '#navigation',
+				side: 'right'
+
+				});
+			$(document).ready(
+			function() {
+			$("html").niceScroll({cursorborder:"0px solid #fff",cursorwidth:"5px",scrollspeed:"70"});
+			}
+			);
+		</script>
+</body>
+</html>
